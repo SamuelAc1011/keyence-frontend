@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+
+/*User Card*/
+.button-spacer {
+  flex: 0 1 20px;
+}
+
+
+.example-card {
+  max-width: 400px;
+}
+
+.subtitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.subtitle span:first-child {
+  margin-right: 20px; /* o cualquier otro valor que prefieras */
+}
+

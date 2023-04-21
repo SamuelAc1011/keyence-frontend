@@ -1,0 +1,19 @@
+<mat-card class="example-card" style="width: 250px">
+  <mat-card-header>
+    <mat-card-title>{{user.name}}</mat-card-title>
+    <mat-card-subtitle class="subtitle">
+      <span>ID: {{user.id}}</span>
+      <span>Date: {{user.date}}</span>
+    </mat-card-subtitle>
+
+  </mat-card-header>
+  <mat-card-content class="subtitle">
+    <span>Punch In: {{user.punchIn}}</span>
+    <span>Punch Out: {{user.punchOut}}</span>
+  </mat-card-content>
+  <mat-card-actions>
+    <button color="accent" mat-flat-button>Update</button>
+    <span class="button-spacer"></span>
+    <button color="warn" (click)="deleteRecord(user.id)" mat-flat-button>Delete</button>
+  </mat-card-actions>
+</mat-card>
